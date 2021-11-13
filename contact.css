@@ -53,7 +53,7 @@ button[type="submit"] {
     padding: 20px;
     font-size: 24px;
     border-radius: 8px;
-    font-family: "Montserrat";
+    font-family: Bahnschrift;
     color: rgb(27, 166, 247);
     text-align: center;
     cursor: pointer;
@@ -62,7 +62,7 @@ button[type="submit"] {
 }
 
     button[type="submit"]:hover {
-        background-color: rgb(214, 226, 236);
+        background-color: rgb(199 220 238);
     }
 
 #status {
@@ -100,4 +100,46 @@ button[type="submit"] {
         opacity: 0;
         pointer-events: none;
     }
+}
+
+.button {
+    position:relative;
+    left:210px;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: darkturquoise;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 18px;
+  width: 1105px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
